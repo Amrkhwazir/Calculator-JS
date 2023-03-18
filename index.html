@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="paragraph">
+            <h1>#caculate:<br> Your Airthmatic <br> Operators </h1>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <input class="output" name="display" type="text" placeholder="Enter any number">
+            </div>
+            <div class="btn">
+
+                <div class="row1">
+                    <button class="standard" style="background-color: rgb(119, 197, 3);" onclick="clr()">AC</button>
+                    <button class="standard" style="background-color: #00b2e3;" onclick="delt()">DE</button>
+                    <button class="function" onclick="display('%')">%</button>
+                    <button class="function" onclick="display('/')">/</button>
+                </div>
+
+                <div class="row1">
+                    <button class="number" onclick="display(7)">7</button>
+                    <button class="number" onclick="display(8)">8</button>
+                    <button class="number" onclick="display(9)">9</button>
+                    <button class="function"onclick="display('*')" >x</button>
+                </div>
+
+                <div class="row1">
+                    <button class="number" onclick="display(4)">4</button>
+                    <button class="number" onclick="display(5)">5</button>
+                    <button class="number" onclick="display(6)">6</button>
+                    <button class="function" onclick="display('-')">-</button>
+                </div>
+
+                <div class="row1">
+                    <button class="number" onclick="display(1)">1</button>
+                    <button class="number" onclick="display(2)">2</button>
+                    <button class="number" onclick="display(3)">3</button>
+                    <button class="function" onclick="display('+')">+</button>
+                </div>
+
+                <div class="row1">
+                    <button class="function" onclick="display('.')">.</button>
+                    <button class="number" onclick="display(0)">0</button>
+                    <button class="equal-to-function"style="background-color: orangered;" onclick="finalAnswer()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
